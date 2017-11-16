@@ -1,0 +1,125 @@
+.floor-nav {
+  position: fixed;
+  margin-top: -150px;
+  top: 50%;
+  z-index: 9999;
+  display: none;
+  width: 204px;
+  transition: all .3s ease;
+  &.floor-nav_2 {
+    width: 101px;
+    .top-icon {
+      background-position: center top;
+    }
+    .sp-girl {
+      background-image: url(./imgs/girl-2.png)
+    }
+  }
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  .floor-nav-u {
+    padding-top: 97px;
+    li {
+      display: block;
+      opacity: 0;
+      height: 42px;
+      background-color: transparent;
+      margin-bottom: 2px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+  .top-icon {
+    transition: all .3s ease;
+    cursor: pointer;
+    height: 20px;
+    background: url(./imgs/top-icon.png) no-repeat 66px center;
+    margin-bottom: 4px;
+  }
+  .sp-tip {
+    transition: all .3s ease;
+    height: 129px;
+    position: relative;
+    background: url(./imgs/tip-content.png) no-repeat center center;
+  }
+  .sp-girl {
+    // transition: all .6s ease;
+    height: 104px;
+    background: url(./imgs/girl.png) no-repeat center center;
+  }
+  .close-tip {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    // background-color: darkcyan;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+}
+
+.sp-girl-bg_3 {
+  height: 104px;
+  background: url(./imgs/girl-bg.png) no-repeat center bottom;
+}
+
+.sp-girl_3 {
+  height: 95px;
+  background: url(./imgs/girl-3.png) no-repeat center center;
+  // animation: rotateMove ease-in-out 4.3s;
+  // animation-fill-mode: forwards;
+  // animation-iteration-count: 3;
+}
+
+.sp-girl-animation {
+  animation: rotateMove ease-in-out 4.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateMove {
+  0% {
+    transform-origin: 50% bottom;
+    transform: rotate(0deg);
+  }
+  20% {
+    transform-origin: 50% bottom;
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform-origin: 50% bottom;
+    transform: rotate(8deg);
+  }
+  60% {
+    transform-origin: 50% bottom;
+    transform: rotate(-8deg);
+  }
+  80% {
+    transform-origin: 50% bottom;
+    transform: rotate(8deg);
+  }
+  100% {
+    transform-origin: 50% bottom;
+    transform: rotate(0deg);
+  }
+}

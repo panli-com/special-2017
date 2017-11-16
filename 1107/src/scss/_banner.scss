@@ -1,0 +1,56 @@
+.layui-layer-close2 {
+  opacity: 0;
+}
+
+.panli-double-eleven {
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  span {
+    position: absolute;
+    width: 54px;
+    height: 60px;
+    display: inline-block;
+    background-color: rgba(#fff, 0.2);
+    top: 60px;
+    font-size: 36px;
+    color: #292929;
+    text-align: center;
+    line-height: 60px;
+  }
+  a{
+    position: absolute;
+    width: 240px;
+    height: 60px;
+    display: inline-block;
+    // background-color: rgba(rgb(31, 194, 104), 0.2);
+    background-color: transparent;
+    top: 350px;
+    left: 80px;
+  }
+  .double-time {
+    &-h {
+      left: 63px;
+    }
+    &-m {
+      left: 158px;
+    }
+    &-s {
+      left: 252px;
+    }
+  }
+}
+
+.layui-layer-setwin {
+  z-index: 999;
+  .layui-layer-close2 {
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.i-double-eleven-wp {
+  background: transparent;
+  height: 100%;
+}

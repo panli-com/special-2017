@@ -1,0 +1,211 @@
+{
+  "start": "1116",
+  "1116": {
+    "id": "540",
+    "title": "番淘黑五 番淘首单免服务费",
+    "keywords": "",
+    "description": "",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./1116/src/scss/main.scss"],
+      "js": ["./1116/src/js/*.js"]
+    },
+    "build": {
+      "css": "540.css",
+      "js": "app.js"
+    }
+  },
+  "1107": {
+    "id": "530",
+    "title": "番淘导购 番淘首单免服务费",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./1107/src/scss/main.scss"],
+      "js": ["./1107/src/js/*.js"]
+    },
+    "build": {
+      "css": "530.css",
+      "js": "app.js"
+    }
+  },
+  "0905": {
+    "id": "530",
+    "title": "番淘导购 番淘首单免服务费",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0905/src/scss/main.scss"],
+      "js": ["./0905/src/js/*.js"]
+    },
+    "build": {
+      "css": "530.css",
+      "js": "app.js"
+    }
+  },
+  "0830": {
+    "id": "527",
+    "title": "中秋节 -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0830/src/scss/main.scss"],
+      "js": ["./0830/src/js/*.js"]
+    },
+    "build": {
+      "css": "527.css",
+      "js": "app.js"
+    }
+  },
+  "0802": {
+    "id": "525",
+    "title": "番淘导购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0802/src/scss/main.scss"],
+      "js": ["./0802/src/js/*.js"]
+    },
+    "build": {
+      "css": "525.css",
+      "js": "app.js"
+    }
+  },
+  "0612": {
+    "id": "519",
+    "title": "Panli粉丝狂欢节 -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0612/src/scss/main.scss"],
+      "js": ["./0612/src/js/*.js"]
+    },
+    "build": {
+      "css": "519.css",
+      "js": "app.js"
+    }
+  },
+  "0606": {
+    "id": "518",
+    "title": "樱花-专题-扫码 -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0606/src/scss/main.scss"],
+      "js": ["./0606/src/js/*.js"]
+    },
+    "build": {
+      "css": "518.css",
+      "js": "app.js"
+    }
+  },
+  "0511": {
+    "id": "515",
+    "title": "闺蜜节 -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0511/src/scss/main.scss"],
+      "js": ["./0511/src/js/*.js"]
+    },
+    "build": {
+      "css": "515.css",
+      "js": "app.js"
+    }
+  },
+  "0309-h5": {
+    "id": "509",
+    "title": "12周年领红包",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.3 12周年领红包 H5",
+    "author": "Julian",
+    "load": {
+      "css": ["./0309-h5/src/scss/main.scss"],
+      "js": ["./libs/js/D.js", "./libs/js/view-rem720.js", "./libs/js/fastclick.js", "./0309-h5/src/js/*.js"]
+    },
+    "build": {
+      "css": "509.css",
+      "js": "app.js"
+    }
+  },
+  "0309": {
+    "id": "508",
+    "title": "12周年领红包 -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0309/src/scss/main.scss"],
+      "js": ["./0309/src/js/*.js"]
+    },
+    "build": {
+      "css": "508.css",
+      "js": "app.js"
+    }
+  },
+  "0228": {
+    "id": "506",
+    "title": "女人节 -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./0228/src/scss/main.scss"],
+      "js": ["./0228/src/js/*.js"]
+    },
+    "build": {
+      "css": "506.css",
+      "js": "app.js"
+    }
+  },
+  "1223": {
+    "id": "500",
+    "title": " -Panli代购",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.1",
+    "author": "Julian",
+    "load": {
+      "css": ["./1223/src/scss/main.scss"],
+      "js": ["./1223/src/js/*.js"]
+    },
+    "build": {
+      "css": "500.css",
+      "js": "app.js"
+    }
+  },
+  "1031H5": {
+    "id": "491",
+    "title": "双11全球狂欢",
+    "keywords": "Panli代购,代购,海外代购,华人代购,代购中国,淘宝代购,留学生代购",
+    "description": "双十一！Panli网－全球最大的专业代购网络，为海外华人代购国内各种商品，方便您的购物需求",
+    "version": "0.0.3",
+    "author": "Julian",
+    "load": {
+      "css": ["./1031H5/src/scss/main.scss"],
+      "js": ["./libs/js/D.js", "./libs/js/view-rem720.js", "./libs/js/fastclick.js", "./libs/js/rippleria.js", "./1031H5/src/js/*.js"]
+    },
+    "build": {
+      "css": "491.css",
+      "js": "app.js"
+    }
+  }
+}

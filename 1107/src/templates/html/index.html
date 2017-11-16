@@ -1,0 +1,163 @@
+<script type="text/javascript">
+    var PanLiNodeInfo = {
+        time: "1510190760",
+        isLoggedIn: true,
+        double: {
+            startTime: "2017/11/11 00:00:00",
+            endTime: "2017/11/12 00:00:00",
+            h: ".double-time-h",
+            m: ".double-time-m",
+            s: ".double-time-s",
+            layer: {
+                more: 'http://www.panli.com/news/Topic.aspx?nid=470',
+                img: 'http://sf.panli.com/Ued/pc/header/20171109/start.png',
+            },
+            href: [
+                'localhost:3000/',
+                'www.panli.com/',
+                'www.panli.com/Special/TopicColumn.aspx',
+                'www.panli.com/Free_postage/',
+                'www.panli.com/Piece/',
+                'www.panli.com/mypanli/',
+                'www.panli.com/mypanli/Favorite.aspx',
+                'www.panli.com/mypanli/OrderCart.aspx',
+                'www.panli.com/mypanli/OrderList.aspx',
+                'www.panli.com/mypanli/ShoppingCart.aspx'
+            ]
+        },
+        cookie: 'doubleStart',
+        pz: function(s) {
+            return s < 10 ? '0' + s : s;
+        }
+    };
+
+    function PanLiCountTime() {
+        //获取当前时间
+        var date = new Date(PanLiNodeInfo.time * 1000);
+        PanLiNodeInfo.time++;
+        var now = date.getTime();
+        //设置截止时间
+        var endDate = new Date(PanLiNodeInfo.double.endTime);
+        var end = endDate.getTime();
+        //时间差
+        var leftTime = end - now;
+        //定义变量 d,h,m,s保存倒计时的时间
+        var d = 0,
+            h = 0,
+            m = 0,
+            s = 0;
+        if (leftTime >= 0) {
+            d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+            h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+            m = Math.floor(leftTime / 1000 / 60 % 60);
+            s = Math.floor(leftTime / 1000 % 60);
+        }
+        //将倒计时赋值到div中
+        PD(PanLiNodeInfo.double.h).text(PanLiNodeInfo.pz(h))
+        PD(PanLiNodeInfo.double.m).text(PanLiNodeInfo.pz(m))
+        PD(PanLiNodeInfo.double.s).text(PanLiNodeInfo.pz(s))
+            //递归每秒调用countTime方法，显示动态时间效果
+        setTimeout(PanLiCountTime, 1000);
+    }
+
+    function PanliDobLayer() {
+        PanLiCountTime();
+
+        var bgimg = '<div class="panli-double-eleven" style="background-image: url(' + PanLiNodeInfo.double.layer.img + ')";>';
+        var hrefBtn = '<a href="' + PanLiNodeInfo.double.layer.more + '" class=""></a>';
+        var stc = bgimg +
+            '<span class="double-time-h">00</span>' +
+            '<span class="double-time-m">00</span>' +
+            '<span class="double-time-s">00</span>' + hrefBtn +
+            '</div>';
+        PL.open({
+            type: 1,
+            title: false,
+            area: ['418px', '453px'],
+            closeBtn: true,
+            shadeClose: false,
+            skin: 'i-double-eleven-wp',
+            content: stc
+        });
+        PanliDoSetCookie();
+    }
+
+    function PanliDoSetCookie() {
+        set_Cookie(PanLiNodeInfo.cookie, "1")
+    }
+
+    function PanliDoIsLay() {
+        var cookieo = get_Cookie(PanLiNodeInfo.cookie)
+        if (cookieo) {
+            return
+        }
+
+        if (!PanliDoHasUrl()) {
+            return
+        }
+
+        PanliDobLayer()
+    }
+
+    function PanliDoHasUrl() {
+        var urlPath = window.location.host + window.location.pathname
+        var hrefS = PanLiNodeInfo.double.href.toString()
+        var index = hrefS.indexOf(urlPath)
+        if (index == -1) {
+            return false
+        }
+        return true
+    }
+</script>
+
+<style>
+    .layui-layer-close2 {
+        opacity: 0
+    }
+    
+    .panli-double-eleven {
+        height: 100%;
+        background-repeat: no-repeat;
+        position: relative
+    }
+    
+    .panli-double-eleven span {
+        position: absolute;
+        width: 54px;
+        height: 60px;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, .2);
+        top: 60px;
+        font-size: 36px;
+        color: #292929;
+        text-align: center;
+        line-height: 60px
+    }
+    
+    .panli-double-eleven .double-time-h {
+        left: 63px
+    }
+    
+    .panli-double-eleven .double-time-m {
+        left: 158px
+    }
+    
+    .panli-double-eleven .double-time-s {
+        left: 252px
+    }
+    
+    .layui-layer-setwin {
+        z-index: 999
+    }
+    
+    .layui-layer-setwin .layui-layer-close2 {
+        right: 0;
+        width: 50px;
+        height: 50px
+    }
+    
+    .i-double-eleven-wp {
+        background: 0 0;
+        height: 100%
+    }
+</style>
