@@ -1,0 +1,2 @@
+/*! 旺一整年 v 0.0.1  | (c) Mon Dec 18 2017 11:23:27 GMT+0800 (中国标准时间)  Julian  | https://github.com/panli-com/special-2017-cn#readme  544 */
+function LayoutClick(n){var l=$(".layer-html-"+n).html();PL.open({type:1,title:!1,closeBtn:!1,area:["1020px","430px"],shadeClose:!0,skin:"layui-Pan-nobg",content:l})}!function(){$(function(){$("body").on("click",".close-layer",function(){PL.closeAll()})})}();

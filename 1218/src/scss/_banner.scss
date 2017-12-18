@@ -1,0 +1,224 @@
+body {
+  margin: 0 auto;
+  font-family: "Microsoft YaHei", 微软雅黑;
+}
+
+.frame {
+  width: 950px;
+  height: auto;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+dl,
+dt,
+dd,
+b,
+div,
+img {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-weight: normal;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a,
+area {
+  outline: none;
+}
+
+
+/*For IE*/
+
+:focus {
+  -moz-outline-style: none;
+}
+
+
+/*For Firefox*/
+
+.span25 {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+#frame {
+  width: 100%;
+  background-color: #eb2c33;
+}
+
+.vang_banner {
+  height: 580px;
+}
+
+.banner1 {
+  background: url(./img/newyear_vang_02.jpg) no-repeat center;
+  height: 150px;
+}
+
+.banner2 {
+  background: url(./img/newyear_vang_03.jpg) no-repeat center;
+  height: 150px;
+}
+
+.banner3 {
+  background: url(./img/newyear_vang_04.jpg) no-repeat center;
+  height: 150px;
+}
+
+.banner4 {
+  background: url(./img/newyear_vang_05.jpg) no-repeat center;
+  height: 130px;
+}
+
+.content_back {
+  width: 100%;
+  overflow: hidden;
+}
+
+.red_content {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.vang_time {
+  background: url(./img/newyear_vang_07.gif) no-repeat;
+  height: 260px;
+  display: block;
+}
+
+.lj_register {
+  position: relative;
+  width: 202px;
+  height: 76px;
+  left: 710px;
+  top: 84px;
+  display: block;
+}
+
+.For_details {
+  position: relative;
+  width: 130px;
+  height: 42px;
+  left: 179px;
+  top: 74px;
+  display: block;
+}
+
+.vang_title {
+  background: url(./img/newyear_vang_10.gif) no-repeat center;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.vang_dianpu li {
+  float: left;
+  width: 245px;
+  height: 340px;
+  margin: 0 6px 9px 0;
+  background-color: #fff;
+  display: block;
+}
+
+.vang_dianpu .pro_right {
+  margin-right: 0;
+}
+
+.pro_title {
+  font-size: 14px;
+  color: #333;
+  padding: 12px 14px 6px 14px;
+  display: block;
+}
+
+.pro_title span {
+  color: #eb2c33;
+  font-size: 20px;
+}
+
+.pro_title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.lj_goumai {
+  float: left;
+  margin: 0 5px 10px 12px;
+  display: block;
+}
+
+.shop_pick {
+  float: right;
+  margin: 0 12px 10px 0;
+}
+
+.fuceng {
+  width: 137px;
+  height: 216px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 50px;
+  left: 48.5%;
+  margin-left: -630px;
+  _position: absolute;
+}
+
+
+.layer-html-1-main {
+  position: relative;
+  overflow: hidden;
+  .online-url-sp {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    top: 155px;
+    left: 615px;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.close-layer {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  right: 10px;
+  cursor: pointer;
+  top: 0;
+}
